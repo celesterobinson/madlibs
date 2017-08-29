@@ -1,0 +1,105 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/posts.jpg");
+    height: 100%;
+    width: 95%;
+}
+
+.content {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    background-color: #e7b91b;
+    font-family: 'Baloo Bhaijaan', cursive;
+    width: 80%;
+    height: 80vh;
+    border-radius: 90px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    -webkit-box-shadow: 0 20px 80px -6px black;
+        box-shadow: 0 20px 80px -6px black;
+}
+
+.content > div {
+    width: 50%;
+    padding: 10px;
+}
+
+.content > div:first-child {
+    border-right: dotted 2px black;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+blockquote {
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.rows {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+#row-3 {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    float: left;
+    clear: none;
+}
+
+label {
+    float: left;
+    display: block;
+    padding: 2px 1em 0 0;
+}
+  
+  input[type=radio],
+  input.radio {
+    float: left;
+    margin: 2px 5px 0 10px;
+  }
+
+#submit {
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
