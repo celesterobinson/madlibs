@@ -33,5 +33,5 @@ function getStory() {
 }
 
 function fillInStory(story) {
-
+    
 }
