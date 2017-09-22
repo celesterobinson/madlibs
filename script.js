@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('#submit').click(function(){
         var story = getStory();
         showStory(story);
-        fillInStory(story);
+        getUserInput(story);
         createRandWordArr();
     });
 });
@@ -33,7 +33,7 @@ function getStory() {
     }
 }
 
-function fillInStory(story) {
+function getUserInput(story) {
     var verbInput = $('#verb-input'); //grabs input from all textboxes
     var adjectiveInput = $('#adjective-input');
     var adverbInput = $('#adverb-input');
@@ -65,6 +65,7 @@ var randNounArr = [];
 var randAdjArr = [];
 var randVerbArr = [];
 var randAdverbArr = [];
+var story = getStory();
 //Nouns
     while(randNounArr.length < 4) {
         if($('#noun-input').val = (' ')) {
@@ -74,6 +75,7 @@ var randAdverbArr = [];
         }
     }
     console.log(randNounArr);
+    injectWords(randNounArr, 'noun', story)
 //Adjectives
     while(randAdjArr.length < 4) {
         if($('#adjective-input').val = (' ')) {
@@ -83,24 +85,27 @@ var randAdverbArr = [];
         }
     }
     console.log(randAdjArr);
+    injectWords(randAdjArr, 'adjective', story)
 //Verbs
-    while(randNounArr.length < 4) {
-        if($('#noun-input').val = (' ')) {
+    while(randVerbArr.length < 4) {
+        if($('#verb-input').val = (' ')) {
             for (var i = 0; i < 4; i++) {
-            randNounArr.push(randFilteredWord(verbs, randNounArr));
+            randVerbArr.push(randFilteredWord(verbs, randVerbArr));
             }
         }
     }
-    console.log(randNounArr);
+    console.log(randVerbArr);
+    injectWords(randVerbArr, 'verb', story)
 //Adverbs
-    while(randNounArr.length < 4) {
-        if($('#noun-input').val = (' ')) {
+    while(randAdverbArr.length < 4) {
+        if($('#adverb-input').val = (' ')) {
             for (var i = 0; i < 4; i++) {
-            randNounArr.push(randFilteredWord(adverbs, randNounArr));
+            randAdverbArr.push(randFilteredWord(adverbs, randAdverbArr));
             }
         }
     }
-    console.log(randNounArr);
+    console.log(randAdverbArr);
+    injectWords(randAdverbArr, 'adverb', story)
 }
 
 function getRandWord(arr) {
