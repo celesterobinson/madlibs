@@ -76,7 +76,7 @@ var story = getStory();
         }
     }
     console.log(randNounArr);
-    injectWords(randNounArr, 'noun', story)
+    injectWords(randNounArr, 'noun', story);
 //Adjectives
     while(randAdjArr.length < 4) {
         for (var i = 0; i < 4; i++) {
@@ -84,7 +84,7 @@ var story = getStory();
         }
     }
     console.log(randAdjArr);
-    injectWords(randAdjArr, 'adjective', story)
+    injectWords(randAdjArr, 'adjective', story);
 //Verbs
     while(randVerbArr.length < 4) {
         for (var i = 0; i < 4; i++) {
@@ -92,7 +92,7 @@ var story = getStory();
         }
     }
     console.log(randVerbArr);
-    injectWords(randVerbArr, 'verb', story)
+    injectWords(randVerbArr, 'verb', story);
 //Adverbs
     while(randAdverbArr.length < 4) {
         for (var i = 0; i < 4; i++) {
@@ -100,7 +100,7 @@ var story = getStory();
         }
     }
     console.log(randAdverbArr);
-    injectWords(randAdverbArr, 'adverb', story)
+    injectWords(randAdverbArr, 'adverb', story);
 }
 
 function getRandWord(arr) {
