@@ -69,34 +69,53 @@ var randAdjArr = adjectiveWords;
 var randVerbArr = verbWords;
 var randAdverbArr = adverbWords;
 var story = getStory();
+if (verbWords[0] === "") {
+    verbWords.shift();
+}
+
 //Nouns
     while(randNounArr.length < 4) {
-        for (var i = 0; i < 4; i++) {
+        for (var i = 0; i < 3; i++) {
         randNounArr.push(randFilteredWord(nouns, randNounArr));
+            if (randNounArr[0] === "") {
+                randNounArr.shift();
+            }
         }
     }
     console.log(randNounArr);
     injectWords(randNounArr, 'noun', story);
+
 //Adjectives
     while(randAdjArr.length < 4) {
-        for (var i = 0; i < 4; i++) {
+        for (var i = 0; i < 3; i++) {
         randAdjArr.push(randFilteredWord(adjectives, randAdjArr));
+            if (randAdjArr[0] === "") {
+                randAdjArr.shift();
+            }
         }
     }
     console.log(randAdjArr);
     injectWords(randAdjArr, 'adjective', story);
+
 //Verbs
     while(randVerbArr.length < 4) {
-        for (var i = 0; i < 4; i++) {
+        for (var i = 0; i < 3; i++) {
         randVerbArr.push(randFilteredWord(verbs, randVerbArr));
+            if (randVerbArr[0] === "") {
+                randVerbArr.shift();
+            }
         }
     }
     console.log(randVerbArr);
     injectWords(randVerbArr, 'verb', story);
+
 //Adverbs
     while(randAdverbArr.length < 4) {
-        for (var i = 0; i < 4; i++) {
+        for (var i = 0; i < 3; i++) {
         randAdverbArr.push(randFilteredWord(adverbs, randAdverbArr));
+            if (randAdverbArr[0] === "") {
+                randAdverbArr.shift();
+            }
         }
     }
     console.log(randAdverbArr);
