@@ -82,6 +82,9 @@ if (verbWords[0] === "") {
             }
         }
     }
+    if(randNounArr.length > 4) {
+        randNounArr.pop();
+    }
     console.log(randNounArr);
     injectWords(randNounArr, 'noun', story);
 
@@ -93,6 +96,9 @@ if (verbWords[0] === "") {
                 randAdjArr.shift();
             }
         }
+    }
+    if(randAdjArr.length > 4) {
+        randAdjArr.pop();
     }
     console.log(randAdjArr);
     injectWords(randAdjArr, 'adjective', story);
@@ -106,6 +112,9 @@ if (verbWords[0] === "") {
             }
         }
     }
+    if(randVerbArr.length > 4) {
+        randVerbArr.pop();
+    }
     console.log(randVerbArr);
     injectWords(randVerbArr, 'verb', story);
 
@@ -117,6 +126,9 @@ if (verbWords[0] === "") {
                 randAdverbArr.shift();
             }
         }
+    }
+    if(randAdverbArr.length > 4) {
+        randAdverbArr.pop();
     }
     console.log(randAdverbArr);
     injectWords(randAdverbArr, 'adverb', story);
