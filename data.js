@@ -1,6 +1,6 @@
    
 //Arrays
-var nouns = [
+var backupNouns = [
     "Acid", 
     "Assistance", 
     "Crayfish", 
@@ -13,7 +13,7 @@ var nouns = [
     "Subcomponent"
 ]
 
-var adjectives = [
+var backupAdjectives = [
     "tangible",
     "plausible",
     "blushing",
@@ -26,7 +26,7 @@ var adjectives = [
     "pink"
 ]
 
-var verbs = [
+var backupVerbs = [
     "calculate",
     "bolt",
     "explode",
@@ -39,7 +39,7 @@ var verbs = [
     "stretch"
 ]
 
-var adverbs = [
+var backupAdverbs = [
     "frantically",
     "upside-down",
     "rightfully",
